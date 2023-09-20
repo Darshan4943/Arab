@@ -1,0 +1,108 @@
+
+
+.HomepageCarousel {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+
+}
+.gallary {
+  width: 100%;
+}
+.gallary-container {
+  align-items: center;
+  display: flex;
+  height: 402px;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+}
+.gallary-item {
+  position: absolute;
+  transition: all 0.8s ease-in-out;
+  z-index: 0;
+  background-size: contain;
+  width: 468px;
+  height: 240px;
+  opacity: 0;
+}
+.gallary-item-1 {
+  left: 15%;
+  opacity: 0.8;
+  transform: translateX(-50%);
+}
+.gallary-item-2,
+.gallary-item-4 {
+  opacity: 1;
+  z-index: 1;
+  width: 628px;
+  height: 320px;
+  
+}
+.gallary-item-2 {
+  left: 30%;
+  transform: translateX(-50%);
+  
+}
+.gallary-item-3 {
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  border-radius: 40px;
+  width: 788px;
+  height: 400px;
+}
+
+.gallary-item-4 {
+  left: 70%;
+  transform: translateX(-50%);
+  
+}
+.gallary-item-5 {
+  left: 85%;
+  opacity: 0.8;
+  transform: translateX(-50%);
+}
+
+
+.slider-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 20%;
+  margin-top: 3rem;
+  transform: translateY(-50%);
+  width: 100%;
+  gap: 3rem;
+  z-index: 3; 
+  
+}
+
+
+.left-arrow,
+.right-arrow {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  color: #333333;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+.left-arrow:hover,
+.right-arrow:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
