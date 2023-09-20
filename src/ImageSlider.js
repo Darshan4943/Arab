@@ -94,7 +94,7 @@ export const ImageSlider = () => {
         {positions.map((position, index) => (
           <img
             key={index}
-            src={`/images/slider/${index + 1}.png`}
+            src={`/images/slider/${index + 1}.jpg`}
             alt={` ${index + 1}`}
             className={`gallary-item ${position.class}`}
           />
@@ -103,10 +103,10 @@ export const ImageSlider = () => {
       <div className="slider-arrows">
         
         <button onClick={shiftClockwise} className="arrow left-arrow">
-          &#8592; {/* Right arrow */}
+          &#8592;
         </button>
         <button onClick={shiftAntiClockwise} className="arrow right-arrow">
-          &#8594; {/* Right arrow */}
+          &#8594; 
         </button>
        
       </div>
